@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap_blue.css" rel="stylesheet">
+	<link href="css/bootstrap_plain.css" rel="stylesheet">
+	
+
+</head>
+<body>
+	<nav class="navbar navbar-default"><!--  for navigation  -->
+  	   <div class="container-fluid" style="background-color: black;">
+  	   	<div id="main_navbar">
+          <ul class="nav navbar-nav">
+          <li class="active"><a href="home.html"><b>DASHBOARD</b></a></li>
+          <li><a href="addstudent.html"><b>ADD STUDENT</b></a></li>
+          <li><a href="viewstudent.html"><b>VIEW STUDENT</b></a></li>
+          <li><a href="removestudent.html"><b>REMOVE STUDENT</b></a></li>
+          <li><a href="login.html"><b>LOG OUT</b></a></li>
+          </ul>
+            </div>
+      	</div>
+      	<div class="container">
+    	<center><h1>WELCOME TO DASHBOARD</h1></center>
+    	<ol class="breadcrumb">
+    		<li><a href="home.html">DASHBOARD</a></li>
+    	</ol>
+    	</div>
+
+
+    </nav>
+    <div class="container">
+    <div class="col-sm-4">
+    	<input type="button" name="add" value="ADD STUDENT" onclick="location.href='addstudent.html'">
+    	<img class="img-thumbnail" src="./img/add.png">
+    </div>
+    <div class="col-sm-4"> 
+    	<input type="button" name="view" value="VIEW STUDENT " onclick="location.href='viewstudent.html'">
+    	<img class="img-thumbnail" src="./img/view.png">
+    </div>
+    <div class="col-sm-4">
+    	<input type="button" name="remove" value="REMOVE STUDENT" onclick="location.href='removestudent.html'">
+    	<img class="img-thumbnail" src="./img/remove.png">
+    </div>
+    </div>
+
+</body>
+</html>

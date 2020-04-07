@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap_blue.css" rel="stylesheet">
+	<link href="css/bootstrap_plain.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<SCRIPT LANGUAGE="JavaScript">
+		function LogIn(){
+		loggedin=false;
+		var username = document.getElementById('username').value;
+		var password = document.getElementById('password').value;
+		if (username=="admin" && password=="admin") { 
+		loggedin=true;
+		 alert("LoggedIn");
+		open("home.html");
+		
+		}
+		else{
+		alert("Invalid login!");
+		}
+		}
+	</SCRIPT> 
+
+</head>
+<body>
+	<div id="login">
+        <h3 class="text-center text-white" style="color: black;">Student Record Mangement System</h3>
+        <div class="container" >
+            <div id="login-row" class="row justify-content-center">
+                <div id="login-column" class="col-md-12">
+                    <div id="login-box" class="col-md-12">
+                        <form name="myForm" id="login-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info" style="color: white;">Login</h3>
+                            <div class="form-group">
+                                <label for="username" class="text-info" style="color: white;">Username:</label><br>
+                                <input type="username" name="username" id="username" placeholder="Enter Username" value="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info" style="color: white;">Password:</label><br>
+                                <input type="password" name="password" id="password" placeholder="Enter Password" value="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="Submit" onClick="LogIn()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
